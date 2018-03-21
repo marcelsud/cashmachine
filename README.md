@@ -26,6 +26,10 @@ open localhost:8080/withdraw?amount={value}
 
 #### To run it the old way:
 
+Requirements:
+ - PHP 7.1
+ - [Composer](https://getcomposer.org)
+
 Setup:
 
 ```

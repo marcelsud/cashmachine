@@ -34,7 +34,9 @@ class CashMachineController
     public function withdraw(Request $request)
     {
         try {
-            if (!$request->query->has(self::FIELD_AMOUNT)) {
+            if (!$request->query->has(self::FIELD_AMOUNT)
+                || !is_numeric($request->query->get(self::FIELD_AMOUNT))
+            ) {
                 return new JsonResponse([]);
             }
 

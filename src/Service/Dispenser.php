@@ -65,7 +65,7 @@ class Dispenser implements DispenserInterface
 
         $currentNote = array_shift($notes);
 
-        while($amount > 0) {
+        while ($amount > 0) {
             if ($amount < $currentNote) {
                 $currentNote = array_shift($notes);
 
@@ -82,7 +82,8 @@ class Dispenser implements DispenserInterface
 
         if ($amount > 0) {
             throw new NoteUnavailableException(sprintf(
-                self::EXCEPTION_MESSAGE_NOTE_UNAVAILABLE, implode(', ', $this->getAvailableNotes())
+                self::EXCEPTION_MESSAGE_NOTE_UNAVAILABLE,
+                implode(', ', $this->getAvailableNotes())
             ));
         }
 

@@ -2,8 +2,7 @@
 
 ## The Problem
 
-Develop a solution that simulate the delivery of notes when a client does a withdraw in a cash machine.
-
+Develop a solution that simulate the delivery of notes when a customer does a withdraw in a cash machine.
 
 The basic requirements are the follow:
 
@@ -11,27 +10,34 @@ The basic requirements are the follow:
 - It’s possible to get the amount requested with available notes;
 - The client balance is infinite;
 - Amount of notes is infinite;
-- Available notes $ 100,00; $ 50,00; $ 20,00 e $ 10,00
+- Available notes $ 100,00; $ 50,00; $ 20,00 and $ 10,00.
 
+## Example:
 
-Example:
-
-
+```
 Entry: 30.00
 Result: [20.00, 10.00]
+```
 
+```
 Entry: 80.00
 Result: [50.00, 20.00, 10.00]
+```
 
+```
 Entry: 125.00
 Result: throw NoteUnavailableException
+```
 
+```
 Entry: -130.00
 Result: throw InvalidArgumentException
+```
 
+```
 Entry: NULL
 Result: [Empty Set]
-
+```
 
 ## The Deliverables:
 
@@ -41,6 +47,6 @@ The usage of libraries or frameworks is allowed, if this make your test easier o
 
 With the test please delivery:
 
-- API endpoint(s) to test the code
-- Tests
-- any other material you think could be relevant to enrich your test and why
+- API endpoint(s) to test the code;
+- Tests;
+- any other material you think could be relevant to enrich your test and why.

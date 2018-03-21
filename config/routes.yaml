@@ -1,0 +1,3 @@
+withdraw:
+    path: /withdraw
+    controller: App\Controller\CashMachineController::withdraw

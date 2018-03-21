@@ -33,6 +33,8 @@ Requirements:
 Setup:
 
 ```
+git clone git@github.com:marcelsud/cashmachine.git
+cd cashmachine
 composer install
 ```
 
